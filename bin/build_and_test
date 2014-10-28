@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./clean
-./compile
-./compile_tests
-./unit_test
+./bin/clean
+./bin/compile
+./bin/compile_tests
+./bin/unit_test
