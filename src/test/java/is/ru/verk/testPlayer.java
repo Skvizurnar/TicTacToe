@@ -20,11 +20,11 @@ public class testPlayer {
 	
 	@Test
 	public void testEmptyString3() {
-		assertEquals(0, humanPlayer.add(""));
+		assertEquals(0, HumanPlayer.add(""));
 	}
 	
 	@Test
 	public void testEmptyString4() {
-		assertEquals(0, computerPlayer.add(""));
+		assertEquals(0, ComputerPlayer.add(""));
 	}
 }
