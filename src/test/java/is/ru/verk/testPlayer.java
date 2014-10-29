@@ -22,4 +22,9 @@ public class testPlayer {
 	public void testEmptyString3() {
 		assertEquals(0, humanPlayer.add(""));
 	}
+	
+	@Test
+	public void testEmptyString4() {
+		assertEquals(0, computerPlayer.add(""));
+	}
 }
