@@ -42,6 +42,10 @@ public class Board {
 		board[c] = symbol;
 	}
 
+	boolean isOccupied(int x) {
+		return true;
+	}
+
 
 }
 

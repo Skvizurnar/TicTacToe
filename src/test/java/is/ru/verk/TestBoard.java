@@ -23,14 +23,21 @@ public class TestBoard {
 	public void testIsBoardFull() {
 	Board testBoard = new Board();
 	for(int i = 0; i < testBoard.board.length; i++)      {
-                //	testBoard.board[i][j] = 'X';
-		assertFalse(testBoard.isBoardFull());
-		testBoard.putSymbol(i, 'X');
-		//testBoard.putSymbol(i, j, 'X');        
+                assertFalse(testBoard.isBoardFull());
+		testBoard.putSymbol(i, 'X');        
 		}
 	
 	assertTrue(testBoard.isBoardFull());
                 
 	}
+
+	@Test
+	public void testIfBoxIsOccupied(){
+	Board testBoard = new Board();
+
+        testBoard.putSymbol(1, 'X');
+	assertTrue(testBoard.isOccupied(1));
+        }
+	
 }
 
