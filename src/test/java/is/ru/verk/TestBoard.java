@@ -6,7 +6,7 @@ import org.junit.Test;
 public class TestBoard {
 
         public static void main(String args[]) {
-      org.junit.runner.JUnitCore.main("is.ru.verk.testPlayer");
+      org.junit.runner.JUnitCore.main("is.ru.verk.TestBoard");
     }
 	
 	@Test

@@ -6,7 +6,7 @@ import org.junit.Test;
 public class TestPlayer {
 
 	public static void main(String args[]) {
-      org.junit.runner.JUnitCore.main("is.ru.verk.testPlayer");
+      org.junit.runner.JUnitCore.main("is.ru.verk.TestPlayer");
     }
 	@Test
 	public void testEmptyString() {
