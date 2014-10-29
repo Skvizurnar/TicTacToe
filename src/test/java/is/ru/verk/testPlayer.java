@@ -17,4 +17,9 @@ public class testPlayer {
 	public void testEmptyString2() {
 		assertEquals(0, Board.add(""));
 	}
+	
+	@Test
+	public void testEmptyString3() {
+		assertEquals(0, humanPlayer.add(""));
+	}
 }
