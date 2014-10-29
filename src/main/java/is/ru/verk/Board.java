@@ -43,7 +43,9 @@ public class Board {
 	}
 
 	boolean isOccupied(int x) {
-		return true;
+		if(board[x] != ' ')
+			return true;
+		return false;
 	}
 
 
