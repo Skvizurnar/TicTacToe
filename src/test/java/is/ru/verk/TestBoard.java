@@ -42,6 +42,9 @@ public class TestBoard {
 	@Test
 	public void testIfSymbolHasWon() {
 	Board testBoard = new Board();
+	testBoard.putSymbol(0, 'X');
+	testBoard.putSymbol(1, 'X');
+	testBoard.putSymbol(2, 'X');	
 	assertTrue(testBoard.symbolWon('X'));
 	}
 

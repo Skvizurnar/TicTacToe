@@ -5,6 +5,7 @@ public class Board {
 
 	char[] board = new char[9];
 	
+	
 	Board()	{
 		setBoard();
 	}
@@ -49,8 +50,24 @@ public class Board {
 	}
 
 	boolean symbolWon(char x) {
-		return true;
+			//check all possible winning conditions		
+		if(board[0] == board[1] && board[1] == board[2] && board[0] == x){
+			return true;}
+		if(board[3] == board[4] && board[4] == board[5] && board[3] == x){
+                               return true;}
+		if(board[6] == board[7] && board[7] == board[8] && board[6] == x){
+			return true;}
+		if(board[0] == board[3] && board[3] == board[6] && board[0] == x){
+			return true;}
+		if(board[1] == board[4] && board[4] == board[7] && board[1] == x){
+                	return true;}
+		if(board[2] == board[5] && board[5] == board[8] && board[2] == x){
+                	return true;}
+                if(board[0] == board[4] && board[4] == board[8] && board[0] == x){
+                	return true;}
+		if(board[2] == board[4] && board[4] == board[6] && board[2] == x){
+                	return true;}
+		return false;
 	}
-
 }
 
