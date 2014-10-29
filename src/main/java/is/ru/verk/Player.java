@@ -1,15 +1,29 @@
 package is.ru.verk;
 import java.util.*;
 
-public class Player {
 
-	public static int add(String text){
+public abstract class Player{
 
-		if(text.equals("")){
-			return 0;
-		}
+	String playerName;
+	char symbol;
 
-		return 1;
+	Player(String name, char symb)
+	{
+		playerName = name;
+		symbol = symb;
 	}
 
+	// Returns symbol of player
+	char getSymbol()
+	{
+		return symbol;
+	}
+
+	abstract void makeAmove(Board b);
+
+	// Returns the name of of this player
+	String getName()
+	{
+		return playerName;
+	}
 }

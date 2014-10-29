@@ -8,18 +8,20 @@ public class TestPlayer {
 	public static void main(String args[]) {
       org.junit.runner.JUnitCore.main("is.ru.verk.TestPlayer");
     }
+
+
+
 	@Test
-	public void testEmptyString() {
-		assertEquals(0, Player.add(""));
+	public void testHumanPlayer() {
+		HumanPlayer sonja = new HumanPlayer("Sonja",'O');
+		assertEquals("Sonja",sonja.getName());
+		assertEquals('O', sonja.getSymbol());
 	}
 	
-	@Test
-	public void testEmptyString3() {
-		assertEquals(0, HumanPlayer.add(""));
-	}
-	
-	@Test
-	public void testEmptyString4() {
-		assertEquals(0, ComputerPlayer.add(""));
-	}
+	 @Test
+        public void testComputerPlayer() {
+                ComputerPlayer Lexa = new ComputerPlayer("Lexa",'X');
+                assertEquals("Lexa",Lexa.getName());
+                assertEquals('X', Lexa.getSymbol());
+        }
 }

@@ -1,16 +1,25 @@
 package is.ru.verk;
 import java.util.*;
+import java.util.Random;
 
 public class ComputerPlayer extends Player {
 
-        public static int add(String text){
 
-                if(text.equals("")){
-                        return 0;
-                }
+	ComputerPlayer(String name, char symbol){
+		super(name, symbol);
+	}
 
-                return 1;
-        }
+	// Generate a cell for medium difficulty
+	void makeAmove(Board b){
+		Random rand = new Random();
+		int box = 0;
+		if(b.isBoardFull() == false){
+			while(!b.isOccupied(box)){
+				box = rand.nextInt(9);
+			}
+			b.putSymbol(box,symbol);
+		}
+	}
 
 }
 
