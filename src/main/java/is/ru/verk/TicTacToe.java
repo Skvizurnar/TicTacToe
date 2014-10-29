@@ -9,7 +9,7 @@ public class TicTacToe {
 		Board board = new Board();
 		Player P1 = new HumanPlayer('X');
 		Player P2 = new ComputerPlayer();
-		Bool win = false;
+		Boolean win = false;
 		Console console = System.console();
 
 		board.setBoard();
