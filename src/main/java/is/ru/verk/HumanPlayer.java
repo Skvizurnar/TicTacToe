@@ -3,14 +3,22 @@ import java.util.*;
 
 public class HumanPlayer extends Player {
 
+        public static int add(String text){
 
-	HumanPlayer(String name, char symbol)
+                if(text.equals("")){
+                        return 0;
+                }
+
+                return 1;
+        }
+
+	HumanPlayer(String name, char symb)
 	{
-		super(name, symbol);
+		super(name, symb);
 	}
 
 	// Player make a move
-	void makeAmove(Board b){
+	void makeAMove(Board b){
 		Scanner reader = new Scanner(System.in);
 		boolean error = false;
 		do{

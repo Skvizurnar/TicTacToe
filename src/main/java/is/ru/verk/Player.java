@@ -19,7 +19,7 @@ public abstract class Player{
 		return symbol;
 	}
 
-	abstract void makeAmove(Board b);
+	abstract void makeAMove(Board b);
 
 	// Returns the name of of this player
 	String getName()

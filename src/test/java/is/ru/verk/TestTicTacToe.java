@@ -8,10 +8,15 @@ public class TestTicTacToe {
         public static void main(String args[]) {
       org.junit.runner.JUnitCore.main("is.ru.verk.TestTicTacToe");
     }
-        @Test
-        public void testEmptyString() {
-                assertEquals(0, TicTacToe.add(""));
+       
+	@Test
+        public void testNewGame() {
+		
+                HumanPlayer sonja = new HumanPlayer("Sonja",'O');
+                assertEquals("Sonja", sonja.getName());
+                assertEquals('O', sonja.getSymbol());
         }
+
 
         
 }

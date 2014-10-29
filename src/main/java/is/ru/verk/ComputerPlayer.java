@@ -10,7 +10,7 @@ public class ComputerPlayer extends Player {
 	}
 
 	// Generate a cell for medium difficulty
-	void makeAmove(Board b){
+	void makeAMove(Board b){
 		Random rand = new Random();
 		int box = 0;
 		if(b.isBoardFull() == false){
