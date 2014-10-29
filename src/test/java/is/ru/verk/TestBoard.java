@@ -38,6 +38,15 @@ public class TestBoard {
         testBoard.putSymbol(1, 'X');
 	assertTrue(testBoard.isOccupied(1));
         }
+
+	@Test
+	public void testIfSymbolHasWon() {
+	Board testBoard = new Board();
+	assertTrue(testBoard.symbolWon('X'));
+	}
+
+
+
 	
 }
 
