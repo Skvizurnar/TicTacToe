@@ -27,6 +27,8 @@ public class TicTacToe {
 
 		if(board.hasWon(currentPlayer.getSymbol()))	{
 			win = true;
+			System.out.println(currentPlayer.getName() + " has won the game.");
+			break; 
 		}
 		else if(board.isBoardFull())	{
 			
