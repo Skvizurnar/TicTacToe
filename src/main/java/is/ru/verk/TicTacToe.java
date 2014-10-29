@@ -20,7 +20,7 @@ public class TicTacToe {
 
 		while(win == false)	{
 
-		System.out.println("It is: " + currPlayer.getName() +  + "'s move..");
+		System.out.println("Make a move," + currentPlayer.getName());
 		currentPlayer.makeAMove();
 
 		board.printBoard();
