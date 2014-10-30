@@ -8,6 +8,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
+def jarDirectory = new File('../runJar') 
 mainClassName = "is.ru.verk.TicTacToe"
 
 // In this section you declare where to find the dependencies of your project
@@ -30,6 +31,21 @@ jar {
 	 }
 }
 
-task runJar(dependsOn:jar)<<  {
+task runJar(dependsOn:jar) <<  {
 	javaexec { main="-jar"; args build.libs.TicTacToe } 
 }
+
+
+task runJarFromAnotherDir {
+    doFirst{
+        if(!jarDirectory.isDirectory()){
+            jarDirectory.mkdirs()
+        }
+    }
+    copy {
+        from "build/libs/"
+        into '../runJar'
+    }   
+}
+
+
