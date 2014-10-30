@@ -6,6 +6,6 @@
 ###### Alexandra Einarsdóttir
 ###### Anna Louise Ásgeirsdóttir
 ###### Birgitta Ósk Rúnarsdóttir
-###### Kolbrún Davidsen
-###### Sonja Steinarsdóttir
+###### Kolbrún Freyja Davidsen
 ###### Perla Þrastardóttir
+###### Sonja Steinarsdóttir
