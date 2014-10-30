@@ -13,8 +13,8 @@ public class HumanPlayer extends Player {
         }
 
 	HumanPlayer(String name, char symb)
-	{
-		super(name, symb);
+	{	//super calls the parent constructor
+		super(name, symb);	
 	}
 
 	// Player make a move
@@ -22,7 +22,7 @@ public class HumanPlayer extends Player {
 		Scanner reader = new Scanner(System.in);
 		boolean error = false;
 		do{
-			System.out.println("Number what boc do you want to choose");
+			System.out.println("Number what box do you want to choose");
 			int box = reader.nextInt();
 			error = false;
 			if(box < 0 || box > 8){

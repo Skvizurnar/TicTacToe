@@ -6,6 +6,7 @@
 
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
+apply plugin: 'application'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -16,8 +17,8 @@ repositories {
 
 // In this section you declare the dependencies for your production and test code
 dependencies {
-    
-    testCompile 'junit:junit:4.11'
+	compile 'org.slf4j:slf4j-api:1.7.5'
+	testCompile 'junit:junit:4.11'
 }
 
 //Tell the jar 'function' where the main class is so it can create the jar file
@@ -25,4 +26,8 @@ jar {
 	manifest {
 		attributes("Main-Class": "is.ru.verk.TicTacToe")
 	 }
+}
+
+task runJar(dependsOn:jar)<<  {
+	javaexec { main="-jar"; args build.libs.TicTacToe } 
 }

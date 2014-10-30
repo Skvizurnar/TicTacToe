@@ -24,4 +24,5 @@ public class TestPlayer {
                 assertEquals("Lexa",Lexa.getName());
                 assertEquals('X', Lexa.getSymbol());
         }
+
 }

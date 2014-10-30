@@ -38,7 +38,7 @@ public class Board {
 		return false;
 	}
 	
-	//put the symbol in [row][column]
+	//put the symbol in [c]
 	void putSymbol(int c, char symbol){
 		board[c] = symbol;
 	}

@@ -16,7 +16,7 @@ public class TicTacToe {
 
 		board.printBoard();
 
-		Player currentPlayer = P1;
+		Player currentPlayer = P1;	//Player 1 will always start,maybe generate a random function to fix?
 
 		while(win == false)	{
 			System.out.println("Make a move, " + currentPlayer.getName());
@@ -32,12 +32,12 @@ public class TicTacToe {
 				System.out.println("The game ended in a draw...");
 				break;
 			}			
-		}
-		if(P2 == currentPlayer)		{
-			currentPlayer = P1;
-		}
-		else	{
-			currentPlayer = P2;
+			if(P1 == currentPlayer)		{
+				currentPlayer = P2;
+			}
+			else	{
+				currentPlayer = P1;
+			}
 		}		
 	}
 
