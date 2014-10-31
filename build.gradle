@@ -22,6 +22,8 @@ repositories {
 dependencies {
 	compile 'org.slf4j:slf4j-api:1.7.5'
 	testCompile 'junit:junit:4.11'
+	compile 'org.hamcrest:hamcrest-core:1.3'
+        compile 'com.sparkjava:spark-core:1.1.1'
 }
 
 //Tell the jar 'function' where the main class is so it can create the jar file
@@ -31,9 +33,9 @@ jar {
 	 }
 }
 
-task runJar(dependsOn:jar) <<  {
-	javaexec { main="-jar"; args build.libs.TicTacToe } 
-}
+//task runJar(dependsOn:jar) <<  {
+//	javaexec { main="-jar"; args build.libs.TicTacToe } 
+//}
 
 
 task runJarFromAnotherDir {
@@ -47,5 +49,7 @@ task runJarFromAnotherDir {
         into '../runJar'
     }   
 }
-
+run{
+standardInput = System.in
+}
 

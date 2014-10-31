@@ -1,6 +1,8 @@
 package is.ru.verk;
 import java.util.*;
-import java.io.Console;
+import java.io.*;
+import java.util.Scanner;
+
  
 public class TicTacToe {
 
