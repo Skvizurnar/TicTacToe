@@ -1,11 +1,8 @@
-###Háskólinn í Reykjavík        	  						        
-###Haustönn 2014   
-
-###Hugbúnaðarfræði 
-###T-303-HUGB           
-###Kennari: Hannes Pétursson
-
-######Nemendur:  Alexandra Einarsdóttir
+#####Háskólinn í Reykjavík, Haustönn 2014
+#####Hugbúnaðarfræði, T-303-HUGB    
+#####Kennari: Hannes Pétursson
+<br>
+######Alexandra Einarsdóttir
 ######Anna Louise Ásgeirsdóttir
 ######Birgitta Ósk Rúnarsdóttir
 ######Kolbrún Freyja Davidsen     
@@ -15,7 +12,7 @@
 Development manual
 ---------------
 
-The following instructions assume linux is used. 
+The following instructions assume Linux is used. 
 
 To get the project to build on a fresh machine the following programs are needed:
 
