@@ -33,7 +33,7 @@ public class TicTacToeWeb implements SparkApplication {
         post(new Route("/makeAMove") {
                 @Override
                 public Object handle(Request request, Response response) {
-                        Integer input = Integer.valueOf(request.queryParams("makeAMove")) - 1; //minus one because we are using an int array
+                        Integer input = Integer.valueOf(request.queryParams("makeAMove")); //minus one because we are using an int array
                         Player currentPlayer = P1;
                         Boolean win = false;
                         while(win == false)     {
