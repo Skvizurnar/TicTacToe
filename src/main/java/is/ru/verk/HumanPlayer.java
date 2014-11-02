@@ -8,7 +8,7 @@ public class HumanPlayer extends Player {
 		super(name, symb);	
 	}
 
-	// Player make a move
+	// Player makes a move
 	void makeAMove(Board b){
 		Scanner reader = new Scanner(System.in);
 		boolean error = false;

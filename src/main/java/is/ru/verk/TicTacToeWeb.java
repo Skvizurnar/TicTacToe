@@ -6,7 +6,7 @@ import spark.servlet.SparkApplication;
 
 public class TicTacToeWeb implements SparkApplication {
         public static void main(String[] args) {
-                staticFileLocation("/public");
+                staticFileLocation("/public");	//where the html files are stored
 		SparkApplication TicTacToe  = new TicTacToeWeb();
                 String port = System.getenv("PORT");
                 if (port != null) {
@@ -20,7 +20,6 @@ public class TicTacToeWeb implements SparkApplication {
         final Board board = new Board();
         final Player P1 = new HumanPlayer("Player 1", 'X');
         final Player P2 = new ComputerPlayer("Player 2",'O');
-	//final TicTacToe game = new TicTacToe();
 		
 
         post(new Route("/board") {
@@ -35,7 +34,7 @@ public class TicTacToeWeb implements SparkApplication {
         post(new Route("/makeAMove") {
                 @Override
                 public Object handle(Request request, Response response) {
-                        Integer input = Integer.valueOf(request.queryParams("makeAMove")); //minus one because we are using an int array
+                        Integer input = Integer.valueOf(request.queryParams("makeAMove")); //takes in the box the user pressed
                         Player currentPlayer = P1;
                         Boolean win = false;
                         while(win == false)     {
