@@ -1,4 +1,4 @@
-https://travis-ci.org/Skvizurnar/TicTacToe.svg?branch=master
+![Build Status] (https://travis-ci.org/Skvizurnar/TicTacToe.svg?branch=master)
 
 ##### T-303-HUGB, Software Engineering 2014
 ##### Late-term Assignment
