@@ -1,10 +1,7 @@
-#####Háskólinn í Reykjavík        	  						        
-#####Haustönn 2014   
-
-#####Hugbúnaðarfræði 
-#####T-303-HUGB           
+#####Háskólinn í Reykjavík, Haustönn 2014   
+#####Hugbúnaðarfræði, T-303-HUGB           
 #####Kennari: Hannes Pétursson
-
+<br><br>
 #####Nemendur:  Alexandra Einarsdóttir
 #####Anna Louise Ásgeirsdóttir
 #####Birgitta Ósk Rúnarsdóttir
