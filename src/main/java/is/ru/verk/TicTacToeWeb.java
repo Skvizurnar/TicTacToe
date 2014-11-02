@@ -6,7 +6,7 @@ import spark.servlet.SparkApplication;
 
 public class TicTacToeWeb implements SparkApplication {
         public static void main(String[] args) {
-                staticFileLocation("/public");
+                staticFileLocation("/resources/public/");
                 SparkApplication TicTacToe  = new TicTacToeWeb();
                 String port = System.getenv("PORT");
                 if (port != null) {
