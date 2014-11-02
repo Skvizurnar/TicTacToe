@@ -19,8 +19,8 @@ The following instructions assume linux is used.
 
 To get the project to build on a fresh machine the following programs are needed
 
-1. Git
-2. Java
+  * Git
+  * Java
 
 To set up Git on your machine, follow these instructions: https://help.github.com/articles/set-up-git/
 
