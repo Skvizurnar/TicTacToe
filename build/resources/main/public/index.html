@@ -12,7 +12,7 @@
       </div>
 
       <div class='container'>
-              <form method="get" action="/board" class="form-horizontal">
+              <form method="post" action="/board" class="form-horizontal">
         <button type="submit" class="btn btn-primary">Play</button>
         </form>
       </div>
@@ -25,8 +25,8 @@
                     type: form.attr('method'),
                     url: form.attr('action'),
                     data: null
-                }).done(function(makeAMove) {
-                    $('#results').html(makeAMove).attr('class', 'alert alert-success');
+                }).done(function(board) {
+                    $('#results').html(board).attr('class', 'alert alert-success');
                 }).fail(function() {
                     $('#results').html('Error, not able to play game...').attr('class', 'alert alert-danger');
                 });
