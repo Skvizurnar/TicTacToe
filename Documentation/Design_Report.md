@@ -57,8 +57,8 @@ tilbúnar fyrir. Það endaði með því að þetta var unnið í blöndu af �
 
 Forritunarhlutinn og prófanirnar gengu í raun ágætlega þó ekki séum við með mikinn grunn í Java.  Við vorum frekar snemma í ferlinu 
 komnar með leik sem við gátum keyrt í Console.  Það reyndist hinsvegar heilmikið mál að fá Heroku til að virka eins og skyldi og 
-áttum við í ýmsum tengingarvandamálum sem gekk frekar erfiðlega að leysa úr. 
+áttum við í ýmsum tengingarvandamálum sem gekk frekar erfiðlega að leysa úr.  Það fór svo að við náðum ekki að gera leikinn keyranlegan í gegnum Heroku. 
 
-Við ákváðum að hafa okkar útgáfu leiksins einfalda enda er Mylla í eðli sínu afar einfaldur leikur. Við ákváðum að gera einfalt en 
-skýrt útlit á leikinn og notuðum til þess HTML og Bootstrap. 
+Við ætluðum að hafa okkar útgáfu leiksins einfalda enda er Mylla í eðli sínu afar einfaldur leikur. Við byrjuðum að gera einfalt en 
+skýrt útlit á leikinn og notuðum til þess HTML og Bootstrap en þar sem við náðum ekki að tengja við Heroku lukum við ekki þeirri útfærslu. 
 
