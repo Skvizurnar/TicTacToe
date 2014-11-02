@@ -17,9 +17,9 @@ Administration manual
 
 The following instructions assume linux is used.
 
-To get the project to build on a fresh machine the following programs are needed:\n
-	*Git
-	*Java
+To get the project to build on a fresh machine the following programs are needed:
+  *Git
+  *Java
 
 To set up Git on your machine, follow these instructions: https://help.github.com/articles/set-up-git/
 
