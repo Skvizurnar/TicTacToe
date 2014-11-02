@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Board {
 
-	char[] board = new char[9];
+	char[] board = new char[9]; //an array to keep track of the symbols
 	
 	
 	Board()	{
@@ -24,7 +24,7 @@ public class Board {
 		System.out.println("     |     |     ");
 	}
 	
-	void setBoard()	{
+	void setBoard()	{ //set up the board with empty squares (beginning of the game)
 		for (int x = 0; x < board.length; x++) {
 			board[x] = ' ';
 		}
@@ -44,7 +44,7 @@ public class Board {
 		return false;
 	}
 	
-	//put the symbol in [c]
+	//put the symbol in [c], the place in the array corresponding to c
 	void putSymbol(int c, char symbol){
 		board[c] = symbol;
 	}

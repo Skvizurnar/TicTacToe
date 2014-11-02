@@ -3,15 +3,6 @@ import java.util.*;
 
 public class HumanPlayer extends Player {
 
-        public static int add(String text){
-
-                if(text.equals("")){
-                        return 0;
-                }
-
-                return 1;
-        }
-
 	HumanPlayer(String name, char symb)
 	{	//super calls the parent constructor
 		super(name, symb);	

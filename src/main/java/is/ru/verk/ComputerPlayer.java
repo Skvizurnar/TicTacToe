@@ -6,7 +6,7 @@ public class ComputerPlayer extends Player {
 
 
 	ComputerPlayer(String name, char symbol){
-		super(name, symbol);
+		super(name, symbol); //super calls the parent constructor from Player
 	}
 	//We generate a random number from 0-8 for the computer player
 	void makeAMove(Board b){
