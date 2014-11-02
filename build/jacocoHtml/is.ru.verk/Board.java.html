@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Board.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="right"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TicTacToe</a> &gt; <a href="index.html" class="el_package">is.ru.verk</a> &gt; <span class="el_source">Board.java</span></div><h1>Board.java</h1><pre class="source lang-java linenums">package is.ru.verk;
+import java.util.*;
+
+public class Board {
+
+<span class="fc" id="L6">	char[] board = new char[9]; //an array to keep track of the symbols</span>
+	
+	
+<span class="fc" id="L9">	Board()	{</span>
+<span class="fc" id="L10">		setBoard();</span>
+<span class="fc" id="L11">	}</span>
+
+	void printBoard() {
+<span class="nc" id="L14">		System.out.println(&quot;     |     |     &quot;);</span>
+<span class="nc" id="L15">		System.out.println(&quot;  &quot; + board[0] + &quot;  | &quot; + board[1] + &quot;   | &quot; + board[2]);</span>
+<span class="nc" id="L16">		System.out.println(&quot;     |     |     &quot;);</span>
+<span class="nc" id="L17">		System.out.println(&quot;-----+-----+-----&quot;);</span>
+<span class="nc" id="L18">		System.out.println(&quot;     |     |     &quot;);</span>
+<span class="nc" id="L19">		System.out.println(&quot;  &quot; + board[3] + &quot;  | &quot; + board[4] + &quot;   | &quot; + board[5]);</span>
+<span class="nc" id="L20">		System.out.println(&quot;     |     |     &quot;);</span>
+<span class="nc" id="L21">		System.out.println(&quot;-----+-----+-----&quot;);</span>
+<span class="nc" id="L22">		System.out.println(&quot;     |     |     &quot;);</span>
+<span class="nc" id="L23">		System.out.println(&quot;  &quot; + board[6] + &quot;  | &quot; + board[7] + &quot;   | &quot; + board[8]);</span>
+<span class="nc" id="L24">		System.out.println(&quot;     |     |     &quot;);</span>
+<span class="nc" id="L25">	}</span>
+	
+	void setBoard()	{ //set up the board with empty squares (beginning of the game)
+<span class="fc bfc" id="L28" title="All 2 branches covered.">		for (int x = 0; x &lt; board.length; x++) {</span>
+<span class="fc" id="L29">			board[x] = ' ';</span>
+		}
+<span class="fc" id="L31">	}</span>
+
+
+
+        boolean isBoardFull()	{
+<span class="fc" id="L36">		int counter = 0;</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">		for(int i = 0; i &lt; board.length; i++)</span>
+		{
+<span class="fc bfc" id="L39" title="All 2 branches covered.">			if(board[i] != ' ') // We simply count all the cells that are occupied</span>
+<span class="fc" id="L40">				counter++;</span>
+		}
+<span class="fc bfc" id="L42" title="All 2 branches covered.">		if(counter == board.length)</span>
+<span class="fc" id="L43">			return true;</span>
+<span class="fc" id="L44">		return false;</span>
+	}
+	
+	//put the symbol in [c], the place in the array corresponding to c
+	void putSymbol(int c, char symbol){
+<span class="fc" id="L49">		board[c] = symbol;</span>
+<span class="fc" id="L50">	}</span>
+
+	boolean isOccupied(int x) {
+<span class="pc bpc" id="L53" title="1 of 2 branches missed.">		if(board[x] != ' ')</span>
+<span class="fc" id="L54">			return true;</span>
+<span class="nc" id="L55">		return false;</span>
+	}
+
+	boolean symbolWon(char x) {
+			//check all possible winning conditions		
+<span class="pc bpc" id="L60" title="3 of 6 branches missed.">		if(board[0] == board[1] &amp;&amp; board[1] == board[2] &amp;&amp; board[0] == x){</span>
+<span class="fc" id="L61">			return true;}</span>
+<span class="nc bnc" id="L62" title="All 6 branches missed.">		if(board[3] == board[4] &amp;&amp; board[4] == board[5] &amp;&amp; board[3] == x){</span>
+<span class="nc" id="L63">                               return true;}</span>
+<span class="nc bnc" id="L64" title="All 6 branches missed.">		if(board[6] == board[7] &amp;&amp; board[7] == board[8] &amp;&amp; board[6] == x){</span>
+<span class="nc" id="L65">			return true;}</span>
+<span class="nc bnc" id="L66" title="All 6 branches missed.">		if(board[0] == board[3] &amp;&amp; board[3] == board[6] &amp;&amp; board[0] == x){</span>
+<span class="nc" id="L67">			return true;}</span>
+<span class="nc bnc" id="L68" title="All 6 branches missed.">		if(board[1] == board[4] &amp;&amp; board[4] == board[7] &amp;&amp; board[1] == x){</span>
+<span class="nc" id="L69">                	return true;}</span>
+<span class="nc bnc" id="L70" title="All 6 branches missed.">		if(board[2] == board[5] &amp;&amp; board[5] == board[8] &amp;&amp; board[2] == x){</span>
+<span class="nc" id="L71">                	return true;}</span>
+<span class="nc bnc" id="L72" title="All 6 branches missed.">                if(board[0] == board[4] &amp;&amp; board[4] == board[8] &amp;&amp; board[0] == x){</span>
+<span class="nc" id="L73">                	return true;}</span>
+<span class="nc bnc" id="L74" title="All 6 branches missed.">		if(board[2] == board[4] &amp;&amp; board[4] == board[6] &amp;&amp; board[2] == x){</span>
+<span class="nc" id="L75">                	return true;}</span>
+<span class="nc" id="L76">		return false;</span>
+	}
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.6.2.201302030002</span></div></body></html>
