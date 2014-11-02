@@ -1,25 +1,29 @@
-###Háskólinn í Reykjavík        	  						        
-###Haustönn 2014   
+#####Háskólinn í Reykjavík        	  						        
+#####Haustönn 2014   
 
-###Hugbúnaðarfræði 
-###T-303-HUGB           
-###Kennari: Hannes Pétursson
+#####Hugbúnaðarfræði 
+#####T-303-HUGB           
+#####Kennari: Hannes Pétursson
 
-######Nemendur:  Alexandra Einarsdóttir
-######Anna Louise Ásgeirsdóttir
-######Birgitta Ósk Rúnarsdóttir
-######Kolbrún Freyja Davidsen     
-######Perla Þrastardóttir
-######Sonja Steinarsdóttir
+#####Nemendur:  Alexandra Einarsdóttir
+#####Anna Louise Ásgeirsdóttir
+#####Birgitta Ósk Rúnarsdóttir
+#####Kolbrún Freyja Davidsen     
+#####Perla Þrastardóttir
+#####Sonja Steinarsdóttir
 
-Hönnunarskýrsla
----------------
+###Hönnunarskýrsla
+------------------
 
 Þessi hönnunarskýrsla er unnin sem liður í síðannarverkefni í Hugbúnaðarfræði við Háskólann í Reykjavík. 
 Verkefnið fólst í því að útfæra hinn sívinsæla leik “TicTacToe”, einnig þekktur sem “Mylla” með því að notfæra okkur þær aðferðir 
 sem við höfum lært í síðari hluta námskeiðsins. Þær aðferðir eru meðal annars þær að beita “prófanadrifinni þróun” 
 (Test Driven Development), það er að segja við skrifum prófanir fyrir einingar kóðans áður en kóðinn sjálfur er skrifaður.  
 Við skrifum leikinn í Java og notfærum okkur samstæðustjórnunarkerfið Github til að halda utan um kóðann.
+
+###Klasarit
+
+![Klasarit] (http://i58.tinypic.com/ab1i5j.jpg)
 
 Við teiknuðum gróft klasarit á töflu, en þegar við teiknuðum það upp í þar til gerðu forriti bættist aðeins við, eins og til dæmis 
 áttuðum við okkur ekki á því að það þyrfti sennilega Movement klasa. 
