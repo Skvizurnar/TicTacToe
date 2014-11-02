@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.verk.TestPlayer" tests="2" skipped="0" failures="0" errors="0" timestamp="2014-11-02T14:21:27" hostname="i-8f4af292" time="0.003">
+<testsuite name="is.ru.verk.TestPlayer" tests="2" skipped="0" failures="0" errors="0" timestamp="2014-11-02T14:43:11" hostname="i-8f4af292" time="0.002">
   <properties/>
   <testcase name="testHumanPlayer" classname="is.ru.verk.TestPlayer" time="0.0"/>
   <testcase name="testComputerPlayer" classname="is.ru.verk.TestPlayer" time="0.001"/>
