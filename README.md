@@ -60,7 +60,4 @@ Developed with:
 * [Gradle](http://www.gradle.org/) 2.1
 * [JUnit](http://junit.org/) 4.11
 * [GitHub](https://github.com/)
-* [Selenium](http://www.seleniumhq.org) 
-* [Heroku](https://www.heroku.com)
 * [TravisCI](https://travis-ci.org)
-
