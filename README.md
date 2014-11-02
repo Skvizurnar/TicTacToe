@@ -1,4 +1,4 @@
-
+https://travis-ci.org/Skvizurnar/TicTacToe.svg?branch=master
 
 ##### T-303-HUGB, Software Engineering 2014
 ##### Late-term Assignment
@@ -62,5 +62,5 @@ Developed with:
 * [GitHub](https://github.com/)
 * [Selenium](http://www.seleniumhq.org) 
 * [Heroku](https://www.heroku.com)
-* [TravisCI](https://travis-ci.org)
+
 
