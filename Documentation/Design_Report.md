@@ -1,7 +1,7 @@
 #####Háskólinn í Reykjavík, Haustönn 2014   
 #####Hugbúnaðarfræði, T-303-HUGB           
 #####Kennari: Hannes Pétursson
-<br><br>
+<br>
 #####Nemendur:  Alexandra Einarsdóttir
 #####Anna Louise Ásgeirsdóttir
 #####Birgitta Ósk Rúnarsdóttir
@@ -27,6 +27,8 @@ Við teiknuðum gróft klasarit á töflu, en þegar við teiknuðum það upp �
 
 Hér að ofan má sjá upphaflegt klasarit og samanstóð það af 6 klösum.  þegar leið á fækkaði klösunum um 2, það er að segja Movement og Game duttu út.
 
+###Leikurinn
+
 Stærðin á borðinu er 3x3, og við reyndum að útfæra það með tvívíðu fylki til að byrja með. Það reyndist okkur ekki vel, og þar sem 
 þetta er föst stærð ákvaðum við að færa þetta í einvítt fylki, þar sem fyrsta röðin er 0-2, önnur 3-5, og þriðja 6-8.
 
@@ -44,12 +46,14 @@ Borðið lítur þá svona út:
        6   |   7   |   8
            |       |
 
-Leikurinn getur aðeins endað á þrjá vegu, spilarinn vinnur, tölvan vinnur eða það verður jafntefli.  Til vinna þarf að ná þremur X í 
-röð hvort sem um er að ræða lárétta línu, lóðrétta línu eða á ská.  Mögulegar vinningslínur eru því átta talsins, 
+Leikurinn getur aðeins endað á þrjá vegu, spilarinn vinnur, tölvan vinnur eða það verður jafntefli.  Til vinna þarf að ná þremur X eða þremur 0 í röð, hvort sem um er að ræða lárétta línu, lóðrétta línu eða á ská.  Mögulegar vinningslínur eru því átta talsins, 
 [0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8] og [2,4,6].
 
-Því næst var hafist handa við að skrifa prófanir, okkur fannst frekar óþjált að vinna það allar saman, svo við skiptum okkur í 3 pör, og hvert par vann í einni prófun, og því næst í leiknum sjálfum við að útfæra þá klasa sem prófanir voru tilbúnar fyrir. Það endaði 
-með því að þetta var unnið í blöndu af “allar vinna saman” og “paravinnu”.
+###Útfærsla
+
+Því næst hófumst við handa við að skrifa prófanir. Okkur fannst frekar óþjált að vinna prófanirnar allar saman sem hópur, svo við 
+skiptum okkur upp í 3 pör, og hvert par vann í einni prófun, og því næst í leiknum sjálfum við að útfæra þá klasa sem prófanir voru 
+tilbúnar fyrir. Það endaði með því að þetta var unnið í blöndu af “allar vinna saman” og “paravinnu”.
 
 Forritunarhlutinn og prófanirnar gengu í raun ágætlega þó ekki séum við með mikinn grunn í Java.  Við vorum frekar snemma í ferlinu 
 komnar með leik sem við gátum keyrt í Console.  Það reyndist hinsvegar heilmikið mál að fá Heroku til að virka eins og skyldi og 
