@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.verk.TestBoard" tests="4" skipped="0" failures="0" errors="0" timestamp="2014-11-02T15:39:45" hostname="i-8f4af292" time="0.015">
+<testsuite name="is.ru.verk.TestBoard" tests="4" skipped="0" failures="0" errors="0" timestamp="2014-11-02T16:23:43" hostname="i-8f4af292" time="0.013">
   <properties/>
   <testcase name="testEmptyBoard" classname="is.ru.verk.TestBoard" time="0.003"/>
   <testcase name="testIsBoardFull" classname="is.ru.verk.TestBoard" time="0.001"/>
-  <testcase name="testIfSymbolHasWon" classname="is.ru.verk.TestBoard" time="0.0"/>
+  <testcase name="testIfSymbolHasWon" classname="is.ru.verk.TestBoard" time="0.001"/>
   <testcase name="testIfBoxIsOccupied" classname="is.ru.verk.TestBoard" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

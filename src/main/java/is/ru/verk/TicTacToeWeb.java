@@ -7,7 +7,7 @@ import spark.servlet.SparkApplication;
 public class TicTacToeWeb implements SparkApplication {
         public static void main(String[] args) {
                 staticFileLocation("/public");
-                SparkApplication TicTacToe  = new TicTacToeWeb();
+		SparkApplication TicTacToe  = new TicTacToeWeb ();
                 String port = System.getenv("PORT");
                 if (port != null) {
                         setPort(Integer.valueOf(port));
@@ -20,6 +20,8 @@ public class TicTacToeWeb implements SparkApplication {
         final Board board = new Board();
         final Player P1 = new HumanPlayer("Player 1", 'X');
         final Player P2 = new ComputerPlayer("Player 2",'O');
+	//final TicTacToe game = new TicTacToe();
+		
 
         post(new Route("/board") {
             @Override
