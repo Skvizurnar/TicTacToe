@@ -9,7 +9,7 @@ apply plugin: 'java'
 apply plugin: 'application'
 
 def jarDirectory = new File('../runJar') 
-mainClassName = "is.ru.verk.TicTacToe"
+mainClassName = "is.ru.verk.TicTacToeWeb"
 
 // In this section you declare where to find the dependencies of your project
 repositories {
