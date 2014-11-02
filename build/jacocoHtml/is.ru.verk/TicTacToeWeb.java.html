@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>TicTacToeWeb.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="right"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TicTacToe</a> &gt; <a href="index.html" class="el_package">is.ru.verk</a> &gt; <span class="el_source">TicTacToeWeb.java</span></div><h1>TicTacToeWeb.java</h1><pre class="source lang-java linenums">package is.ru.verk;
+
+import spark.*;
+import static spark.Spark.*;
+import spark.servlet.SparkApplication;
+
+<span class="nc" id="L7">public class TicTacToeWeb implements SparkApplication {</span>
+        public static void main(String[] args) {
+<span class="nc" id="L9">                staticFileLocation(&quot;/public&quot;);</span>
+<span class="nc" id="L10">		SparkApplication TicTacToe  = new TicTacToeWeb();</span>
+<span class="nc" id="L11">                String port = System.getenv(&quot;PORT&quot;);</span>
+<span class="nc bnc" id="L12" title="All 2 branches missed.">                if (port != null) {</span>
+<span class="nc" id="L13">                        setPort(Integer.valueOf(port));</span>
+                }
+<span class="nc" id="L15">                TicTacToe.init();</span>
+<span class="nc" id="L16">        }</span>
+
+    public void init() {
+
+<span class="nc" id="L20">        final Board board = new Board();</span>
+<span class="nc" id="L21">        final Player P1 = new HumanPlayer(&quot;Player 1&quot;, 'X');</span>
+<span class="nc" id="L22">        final Player P2 = new ComputerPlayer(&quot;Player 2&quot;,'O');</span>
+	//final TicTacToe game = new TicTacToe();
+		
+
+<span class="nc" id="L26">        post(new Route(&quot;/board&quot;) {</span>
+            @Override
+            public Object handle(Request request, Response response) {
+<span class="nc" id="L29">                board.setBoard();</span>
+<span class="nc" id="L30">                board.printBoard();</span>
+<span class="nc" id="L31">                return true;</span>
+            }
+        });
+
+<span class="nc" id="L35">        post(new Route(&quot;/makeAMove&quot;) {</span>
+                @Override
+                public Object handle(Request request, Response response) {
+<span class="nc" id="L38">                        Integer input = Integer.valueOf(request.queryParams(&quot;makeAMove&quot;)); //minus one because we are using an int array</span>
+<span class="nc" id="L39">                        Player currentPlayer = P1;</span>
+<span class="nc" id="L40">                        Boolean win = false;</span>
+<span class="nc bnc" id="L41" title="All 2 branches missed.">                        while(win == false)     {</span>
+<span class="nc" id="L42">                        System.out.println(&quot;Make a move, &quot; + currentPlayer.getName());</span>
+<span class="nc" id="L43">                        currentPlayer.makeAMove(board);</span>
+<span class="nc" id="L44">                        board.printBoard();</span>
+
+<span class="nc bnc" id="L46" title="All 2 branches missed.">                        if(board.symbolWon(currentPlayer.getSymbol()))  {</span>
+<span class="nc" id="L47">                                win = true;</span>
+<span class="nc" id="L48">                                System.out.println(currentPlayer.getName() + &quot; has won the game.&quot;);</span>
+<span class="nc" id="L49">                                break;</span>
+                        }
+<span class="nc bnc" id="L51" title="All 2 branches missed.">                        else if(board.isBoardFull())    {</span>
+<span class="nc" id="L52">                                System.out.println(&quot;The game ended in a draw...&quot;);</span>
+<span class="nc" id="L53">                                break;</span>
+                        }
+<span class="nc bnc" id="L55" title="All 2 branches missed.">                        if(P1 == currentPlayer)         {</span>
+<span class="nc" id="L56">                                currentPlayer = P2;</span>
+                        }
+                        else    {
+<span class="nc" id="L59">                                currentPlayer = P1;</span>
+                        }
+
+                        }
+
+<span class="nc" id="L64">                        return true;</span>
+                        }
+                });
+<span class="nc" id="L67">        }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.6.2.201302030002</span></div></body></html>
