@@ -18,6 +18,7 @@ Administration manual
 The following instructions assume linux is used.
 
 To get the project to build on a fresh machine the following programs are needed
+
 1. Git
 2. Java
 
