@@ -56,15 +56,8 @@ Development
 
 Developed with:
 
-* [Java](openjdk.java.net) 1.7.0_65
+* [Java](openjdk.java.net) 1.7.0.65
 * [Gradle](http://www.gradle.org/) 2.1
 * [JUnit](http://junit.org/) 4.11
 * [GitHub](https://github.com/)
-<<<<<<< HEAD
-* [Selenium](http://www.seleniumhq.org) 
-* [Heroku](https://www.heroku.com)
-
-
-=======
 * [TravisCI](https://travis-ci.org)
->>>>>>> dd65470e7c4528c5c842f607bcb7244be0d9f20b
